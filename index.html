@@ -7,11 +7,18 @@
     <title>https://webprosindia.com/SVCENLR/StudentMaster.aspx</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
+
 <style>
-
-
+    
 #head img{
     display: inline-block;    
+}
+
+.mylogo {
+    width: 120px;
+    height: 120px;
+    z-index: 1;
 }
 
 
@@ -59,10 +66,13 @@ table {
 }
 
 #left-table {
+    
     margin: 50px;
-    height: 100%;
-    border: 0.5px solid black;   
-    border-collapse: collapse;
+    /* height: 85%; */
+    width: 12%;
+
+    /* border: 0.5px solid black;    */
+    /* border-collapse: collapse; */
     display: inline-block; 
 }
 
@@ -89,7 +99,7 @@ table {
     margin-bottom: 0px;
 }
 
-#right {
+#right #fee-section {
     border-left: 2px solid rgb(149, 149, 255);
     width: 100%;
 }
@@ -99,7 +109,7 @@ table {
     width: 100%;
 }
 
-#fee-section     table th, table td {
+#fee-section     .fee-table th, .fee-table td {
     text-align: center;
     border: 2px solid #8b8888;
 }
@@ -123,21 +133,16 @@ div .merg{
 }
 
 #final td {
-   
+    border: 2px solid black;
     text-align:end
 }
-
-
-
-
-
 
 </style>
 
 <body>
     <div id="head">
         <img id="head-pic" src="https://webprosindia.com/SVCENLR/CollegeImages/title_head.jpg" alt="svcn-logo">
-        <img id="head-jb" src="http://webprosindia.com/svcenlr/StudentPhotos/885F8D71837D89607558.jpg" alt="student.logo">
+        <img class="mylogo" id="head-jb" src="http://webprosindia.com/svcenlr/StudentPhotos/885F8D71837D89607558.jpg" alt="student.logo">
     </div>
 
     <div id="naam">
@@ -228,7 +233,7 @@ div .merg{
             </div>
 
             <div class="merg">
-                <table style="border: 0px;">
+                <table >
                     <thead>
                         <td>STUDENT FEE CARD</td>
                     </thead>
@@ -270,12 +275,12 @@ div .merg{
                     </tr>
                 </table>
                 <div>
-                    <img src="http://webprosindia.com/svcenlr/StudentPhotos/885F8D71837D89607558.jpg" alt="student-logo">
+                    <img class="mylogo" src="http://webprosindia.com/svcenlr/StudentPhotos/885F8D71837D89607558.jpg" alt="student-logo" >
                 </div>
             </div>
 
             <div id="fee-section">
-                <table style="border: 1px solid black;">
+                <table class="fee-table">
                     <thead class="gr">
                         <td>SI.NO</td>
                         <td>FEE</td>
@@ -693,7 +698,7 @@ div .merg{
                         <td></td>
                         <td>00.00</td>
                         <td>00.00</td>
-                        <td></td>
+                        <td>42,500.00</td>
                         <td></td>
                         <td></td>
                     </tr>
@@ -708,7 +713,7 @@ div .merg{
                         <td>367,100.00</td>
                         <td>00.00</td>
                         <td>00.00</td>
-                        <td></td>
+                        <td>42,500.00</td>
                         <td></td>
                         <td></td>
                     </tr>
